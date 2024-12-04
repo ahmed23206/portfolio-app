@@ -1,4 +1,4 @@
-import ProfileImage from "./components/ProfileImage"; // Correct path within src
+
 import headshot from "./assets/images/headshot.jpeg";
 
 const logotext = "Abdi";
