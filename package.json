@@ -17,13 +17,14 @@
         "typewriter-effect": "^2.18.2",
         "web-vitals": "^3.1.1"
     },
+    "homepage": "https://ahmed23206.github.io/portfolio-app",
     "scripts": {
         "start": "react-scripts start",
         "build": "react-scripts build",
         "test": "react-scripts test",
         "eject": "react-scripts eject",
-        "predeploy": "yarn build && cp build/index.html build/404.html",
-        "deploy": "gh-pages -d build"
+        "predeploy": "npm run build && cp build/index.html build/404.html",
+        "deploy": "gh-pages -d build --add"
     },
     "eslintConfig": {
         "extends": [
@@ -42,5 +43,8 @@
             "last 1 firefox version",
             "last 1 safari version"
         ]
+    },
+    "devDependencies": {
+        "gh-pages": "^6.2.0"
     }
 }

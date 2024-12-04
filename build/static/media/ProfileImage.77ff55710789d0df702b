@@ -1,0 +1,21 @@
+import React from "react";
+import PropTypes from "prop-types";
+
+const ProfileImage = ({ imageUrl, altText, className }) => {
+  return <img src={imageUrl} alt={altText} className={className} />;
+};
+
+// Add default props
+ProfileImage.defaultProps = {
+  altText: "Profile Image",
+  className: "profile-image",
+};
+
+// Add PropTypes for type checking
+ProfileImage.propTypes = {
+  imageUrl: PropTypes.string.isRequired,
+  altText: PropTypes.string,
+  className: PropTypes.string,
+};
+
+export default ProfileImage;
